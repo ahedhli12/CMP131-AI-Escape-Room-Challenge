@@ -4,90 +4,94 @@
 # Team members:
 # Date:
 #
-# Complete every section marked TODO.
-# Starter variables and loop structures are provided for you.
+# STORY:
+# C.O.D.E., the classroom AI, accidentally locked the virtual lab.
+# Complete the three levels to help the player escape.
+#
+# DIRECTIONS:
+# Write your Python code below each numbered TODO.
+# Use only concepts covered in class:
+# print, input, variables, int, if/elif/else, and while loops.
 # ================================================================
 
 
 # ------------------------- INTRODUCTION --------------------------
 
-# Ask the player for a name so the game can personalize its messages.
-player_name = input("Enter your name, brave programmer: ")
-
-# Introduce the story and explain the player's mission.
-print("\nWelcome,", player_name + "!")
-print("C.O.D.E., the classroom AI, has locked the virtual lab.")
-print("Complete three challenges before it assigns homework forever!")
+# TODO 1:
+# Ask the player to enter a name and save it in a variable.
+# Display a welcome message that includes the player's name.
+# Explain that the player must complete three levels to escape.
 
 
 # ------------------- LEVEL 1: ACCESS CODE ------------------------
 
-print("\nLEVEL 1: ACCESS CODE")
-print("Keep trying until you enter the correct access code.")
+# TODO 2:
+# Display the title "LEVEL 1: ACCESS CODE".
+# Explain that the player must enter the correct code to unlock the door.
+# The correct access code is 131.
 
-# Store the correct code and starting values.
-correct_code = 131
-door_status = "locked"
-attempts = 0
+# TODO 3:
+# Create a variable that stores the word "locked".
+# Create another variable that starts the attempt count at 0.
 
-# The loop repeats while the door is locked.
-while door_status == "locked":
-    # TODO 1: Ask the player for an integer access code.
+# TODO 4:
+# Create a while loop that repeats while the door is "locked".
+# Inside the loop:
+#   1. Ask the player to enter an access code.
+#   2. Convert the player's answer to an integer.
+#   3. Add 1 to the attempt count.
+#   4. Use if/else to check the answer.
+#   5. If the code is 131, change the door status to "unlocked".
+#   6. Otherwise, display a friendly message and allow another attempt.
 
-    # Count this attempt.
-    attempts = attempts + 1
-
-    # TODO 2: Use if/else to check the code.
-    # Correct code: change door_status to "unlocked" and print success.
-    # Incorrect code: print a friendly message asking the player to try again.
-
-
-# Display how many attempts the player used.
-print("Access-code attempts used:", attempts)
+# TODO 5:
+# After the loop ends, display that the door is unlocked.
+# Display the number of attempts the player used.
 
 
 # ---------------- LEVEL 2: COOLING SYSTEM ------------------------
 
-print("\nLEVEL 2: COOLING SYSTEM")
-print("A safe temperature is from 50 through 99.")
+# TODO 6:
+# Display the title "LEVEL 2: COOLING SYSTEM".
+# Explain that a safe temperature is from 50 through 99.
+# Ask the player to enter the system temperature as an integer.
 
-# Ask for the first temperature.
-temperature = int(input("Enter the system temperature: "))
+# TODO 7:
+# Create a while loop that repeats when the temperature is unsafe.
+# A temperature is unsafe when it is below 50 OR 100 or higher.
+# Inside the loop:
+#   1. If the temperature is below 50, display "Too cold."
+#   2. Otherwise, display "Overheating."
+#   3. Ask the player to enter a new temperature.
 
-# Repeat while the temperature is too cold or overheating.
-while temperature < 50 or temperature >= 100:
-    # TODO 3: Use if/else to print "Too cold" or "Overheating".
-
-    # Ask for another temperature so the loop can check again.
-    temperature = int(input("Enter a new temperature: "))
-
-# TODO 4: Print a message confirming that the temperature is safe.
+# TODO 8:
+# After the loop ends, display that the temperature is safe.
 
 
 # --------------- LEVEL 3: SECURITY DECISION ---------------------
 
-print("\nLEVEL 3: SECURITY DECISION")
-print("Choose: scan, shutdown, or share")
+# TODO 9:
+# Display the title "LEVEL 3: SECURITY DECISION".
+# Tell the player to enter one of these choices:
+# scan, shutdown, or share
+# Ask for the player's choice and convert it to lowercase.
 
-# Ask for the first choice and convert it to lowercase.
-choice = input("Enter your choice: ").lower()
+# TODO 10:
+# Create a while loop that repeats when the choice is not valid.
+# Inside the loop:
+#   1. Display a friendly invalid-choice message.
+#   2. Ask the player to enter scan, shutdown, or share again.
 
-# Repeat when the player does not enter one of the three choices.
-while choice != "scan" and choice != "shutdown" and choice != "share":
-    # TODO 5: Print an invalid-choice message.
-
-    # Ask again so the loop can check a new choice.
-    choice = input("Enter scan, shutdown, or share: ").lower()
-
-# TODO 6: Use if/elif/else to display a result for each valid choice.
-# The share message must remind the player not to share passwords or
-# private information with AI.
+# TODO 11:
+# After the loop ends, use if/elif/else to display a different
+# message for scan, shutdown, and share.
+# The share message must remind the player not to share passwords
+# or private information with AI.
 
 
 # ----------------------- FINAL ESCAPE ----------------------------
 
-# Display the player's name and a success message.
-print("\nCongratulations,", player_name + "!")
-print("You escaped from C.O.D.E.'s virtual laboratory!")
-
-# TODO 7: Add one friendly or funny final message written by your team.
+# TODO 12:
+# Display the player's name and a congratulations message.
+# Display that the player escaped from the virtual laboratory.
+# Add one friendly or funny final message written by your team.
