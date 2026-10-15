@@ -5,7 +5,7 @@
 # Date:
 #
 # Complete every section marked TODO.
-# Use only variables, input, print, if/elif/else, and while loops.
+# Starter variables and loop structures are provided for you.
 # ================================================================
 
 
@@ -23,64 +23,71 @@ print("Complete three challenges before it assigns homework forever!")
 # ------------------- LEVEL 1: ACCESS CODE ------------------------
 
 print("\nLEVEL 1: ACCESS CODE")
-print("You have three attempts to unlock the laboratory door.")
+print("Keep trying until you enter the correct access code.")
 
-# Store the correct code. Do not ask GitHub Copilot to reveal it.
+# Store the correct code and starting values.
 correct_code = 131
+door_status = "locked"
+attempts = 0
 
-# TODO 1: Create a variable that counts how many attempts were used.
+# The loop repeats while the door is locked.
+while door_status == "locked":
+    # TODO 1: Ask the player for an integer access code.
 
-# TODO 2: Create a text variable named door_status.
-# Start it with the value "locked". Change it to "unlocked" when the
-# player enters the correct code.
+    # Count this attempt.
+    attempts = attempts + 1
 
-# TODO 3: Write a while loop that allows no more than three attempts.
-# Inside the loop:
-#   - Ask the player to enter an integer access code.
-#   - Increase the attempt counter.
-#   - Use if/else to check the code.
-#   - Display the number of attempts remaining after an incorrect code.
+    # TODO 2: Use if/else to check the code.
+    # Correct code: change door_status to "unlocked" and print success.
+    # Incorrect code: print a friendly message asking the player to try again.
 
-# TODO 4: After the loop, determine whether the player may continue.
-# If door_status is still "locked", display a game-over message.
-# The other levels should run only when door_status is "unlocked".
+
+# Display how many attempts the player used.
+print("Access-code attempts used:", attempts)
 
 
 # ---------------- LEVEL 2: COOLING SYSTEM ------------------------
 
-# TODO 5: Place Level 2 inside the correct condition from Level 1.
+print("\nLEVEL 2: COOLING SYSTEM")
+print("A safe temperature is from 50 through 99.")
 
-# Display the Level 2 title and directions.
+# Ask for the first temperature.
+temperature = int(input("Enter the system temperature: "))
 
-# TODO 6: Ask for the system temperature.
+# Repeat while the temperature is too cold or overheating.
+while temperature < 50 or temperature >= 100:
+    # TODO 3: Use if/else to print "Too cold" or "Overheating".
 
-# TODO 7: Use a while loop that continues while the temperature is unsafe.
-#   - 100 or higher: overheating
-#   - Below 50: too cold
-#   - 50 through 99: safe
-# Ask for a new temperature when it is unsafe.
+    # Ask for another temperature so the loop can check again.
+    temperature = int(input("Enter a new temperature: "))
 
-# TODO 8: Display a message when the system reaches a safe temperature.
+# TODO 4: Print a message confirming that the temperature is safe.
 
 
 # --------------- LEVEL 3: SECURITY DECISION ---------------------
 
-# TODO 9: Display the Level 3 title and the three choices:
-# scan, shutdown, or share
+print("\nLEVEL 3: SECURITY DECISION")
+print("Choose: scan, shutdown, or share")
 
-# TODO 10: Ask the player for a choice and convert it to lowercase.
+# Ask for the first choice and convert it to lowercase.
+choice = input("Enter your choice: ").lower()
 
-# TODO 11: Use a while loop to reject invalid choices.
-# Continue asking until the player enters scan, shutdown, or share.
+# Repeat when the player does not enter one of the three choices.
+while choice != "scan" and choice != "shutdown" and choice != "share":
+    # TODO 5: Print an invalid-choice message.
 
-# TODO 12: Use if/elif/else to display a different result for each choice.
+    # Ask again so the loop can check a new choice.
+    choice = input("Enter scan, shutdown, or share: ").lower()
+
+# TODO 6: Use if/elif/else to display a result for each valid choice.
 # The share message must remind the player not to share passwords or
 # private information with AI.
 
 
 # ----------------------- FINAL ESCAPE ----------------------------
 
-# TODO 13: Display the player's name, a success message, and the number
-# of access-code attempts used.
+# Display the player's name and a success message.
+print("\nCongratulations,", player_name + "!")
+print("You escaped from C.O.D.E.'s virtual laboratory!")
 
-# TODO 14: Add one friendly or funny final message written by your team.
+# TODO 7: Add one friendly or funny final message written by your team.
