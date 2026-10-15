@@ -11,9 +11,7 @@ Record what you predicted before running each test. Then record what the program
 
 | Test | Input values | Predicted result | Actual result | Pass or needs revision? |
 |---|---|---|---|---|
-| Correct code on first attempt | | | | |
-| Correct code on third attempt | | | | |
-| Three incorrect codes | | | | |
+| Incorrect code, then correct code | | | | |
 | Temperature exactly 100 | | | | |
 | Temperature exactly 50 | | | | |
 | Invalid choice, then valid choice | | | | |
