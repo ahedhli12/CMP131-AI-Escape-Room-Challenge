@@ -30,7 +30,9 @@ correct_code = 131
 
 # TODO 1: Create a variable that counts how many attempts were used.
 
-# TODO 2: Create a Boolean variable that remembers whether the door is unlocked.
+# TODO 2: Create a text variable named door_status.
+# Start it with the value "locked". Change it to "unlocked" when the
+# player enters the correct code.
 
 # TODO 3: Write a while loop that allows no more than three attempts.
 # Inside the loop:
@@ -40,8 +42,8 @@ correct_code = 131
 #   - Display the number of attempts remaining after an incorrect code.
 
 # TODO 4: After the loop, determine whether the player may continue.
-# If the door was not unlocked, display a game-over message.
-# The other levels should run only when the door is unlocked.
+# If door_status is still "locked", display a game-over message.
+# The other levels should run only when door_status is "unlocked".
 
 
 # ---------------- LEVEL 2: COOLING SYSTEM ------------------------
