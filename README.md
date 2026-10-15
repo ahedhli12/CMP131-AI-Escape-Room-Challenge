@@ -47,7 +47,7 @@ If your team has fewer than four members, one person may hold two roles.
 
 Keep asking for the access code until the player enters `131`.
 
-The starter file provides detailed comments but no solution code. Your team writes the variables, input, `while` loop, and `if/else` statements. Count how many attempts the player uses.
+The starter file provides the introduction, starting variables, and detailed comments. Your team writes the `while` loop and `if/else` statements. Count how many attempts the player uses.
 
 ### Level 2: Cooling System
 
@@ -57,7 +57,7 @@ Ask the player to enter the AI system temperature.
 - A temperature below `50` means the system is too cold.
 - A temperature from `50` through `99` is safe.
 
-The starter file provides step-by-step comments. Your team writes the code that keeps asking until the temperature is safe.
+The starter file provides the first temperature input and step-by-step comments. Your team writes the loop that keeps asking until the temperature is safe.
 
 ### Level 3: Security Decision
 
@@ -67,7 +67,7 @@ Ask the player to choose one action:
 - `shutdown`
 - `share`
 
-The starter file explains the choices in comments. Your team writes the loop, an invalid-choice message, and a result for each valid choice.
+The starter file provides the choices and first input. Your team writes the loop, an invalid-choice message, and a result for each valid choice.
 
 Create your own results for the three choices. The message for `share` must remind the player not to share passwords or private information with AI.
 
