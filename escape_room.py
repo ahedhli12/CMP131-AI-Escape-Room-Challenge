@@ -18,21 +18,25 @@
 # ------------------------- INTRODUCTION --------------------------
 
 # TODO 1:
-# Ask the player to enter a name and save it in a variable.
-# Display a welcome message that includes the player's name.
-# Explain that the player must complete three levels to escape.
+# This introduction is provided. Run it and study the output.
+player_name = input("Enter your name, brave programmer: ")
+
+print("\nWelcome,", player_name + "!")
+print("C.O.D.E., the classroom AI, locked the virtual lab.")
+print("Complete three levels to escape!")
 
 
 # ------------------- LEVEL 1: ACCESS CODE ------------------------
 
 # TODO 2:
-# Display the title "LEVEL 1: ACCESS CODE".
-# Explain that the player must enter the correct code to unlock the door.
-# The correct access code is 131.
+print("\nLEVEL 1: ACCESS CODE")
+print("Enter the correct code to unlock the door.")
 
 # TODO 3:
-# Create a variable that stores the word "locked".
-# Create another variable that starts the attempt count at 0.
+# These starting variables are provided.
+correct_code = 131
+door_status = "locked"
+attempts = 0
 
 # TODO 4:
 # Create a while loop that repeats while the door is "locked".
@@ -52,9 +56,11 @@
 # ---------------- LEVEL 2: COOLING SYSTEM ------------------------
 
 # TODO 6:
-# Display the title "LEVEL 2: COOLING SYSTEM".
-# Explain that a safe temperature is from 50 through 99.
-# Ask the player to enter the system temperature as an integer.
+print("\nLEVEL 2: COOLING SYSTEM")
+print("A safe temperature is from 50 through 99.")
+
+# The first temperature input is provided.
+temperature = int(input("Enter the system temperature: "))
 
 # TODO 7:
 # Create a while loop that repeats when the temperature is unsafe.
@@ -71,10 +77,11 @@
 # --------------- LEVEL 3: SECURITY DECISION ---------------------
 
 # TODO 9:
-# Display the title "LEVEL 3: SECURITY DECISION".
-# Tell the player to enter one of these choices:
-# scan, shutdown, or share
-# Ask for the player's choice and convert it to lowercase.
+print("\nLEVEL 3: SECURITY DECISION")
+print("Choose: scan, shutdown, or share")
+
+# The first security choice is provided.
+choice = input("Enter your choice: ").lower()
 
 # TODO 10:
 # Create a while loop that repeats when the choice is not valid.
@@ -92,6 +99,8 @@
 # ----------------------- FINAL ESCAPE ----------------------------
 
 # TODO 12:
-# Display the player's name and a congratulations message.
-# Display that the player escaped from the virtual laboratory.
+# The final success message is provided.
+print("\nCongratulations,", player_name + "!")
+print("You escaped from C.O.D.E.'s virtual laboratory!")
+
 # Add one friendly or funny final message written by your team.
