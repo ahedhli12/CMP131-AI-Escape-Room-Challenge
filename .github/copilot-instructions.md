@@ -18,7 +18,9 @@ Students have learned only:
 - `if`, `elif`, and `else`
 - `while` loops and counters
 
-Do not introduce functions, lists, dictionaries, classes, exception handling, imported libraries, `for` loops, `break`, or other concepts beyond the assignment unless the student explicitly asks for an explanation. Never rewrite the assignment using advanced techniques.
+Students have not learned the Boolean data type. Use simple number counters or text status values such as `"locked"` and `"unlocked"` when explaining program state.
+
+Do not introduce Boolean variables, functions, lists, dictionaries, classes, exception handling, imported libraries, `for` loops, `break`, or other concepts beyond the assignment unless the student explicitly asks for an explanation. Never rewrite the assignment using advanced techniques.
 
 ## Tutoring Rules
 
