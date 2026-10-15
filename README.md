@@ -47,7 +47,7 @@ If your team has fewer than four members, one person may hold two roles.
 
 Keep asking for the access code until the player enters `131`.
 
-The starter file already provides the variables and `while` loop. Your team completes the input and `if/else` statements. Count how many attempts the player uses.
+The starter file provides detailed comments but no solution code. Your team writes the variables, input, `while` loop, and `if/else` statements. Count how many attempts the player uses.
 
 ### Level 2: Cooling System
 
@@ -57,7 +57,7 @@ Ask the player to enter the AI system temperature.
 - A temperature below `50` means the system is too cold.
 - A temperature from `50` through `99` is safe.
 
-The starter file provides the beginning of this level. Keep asking until the temperature is safe.
+The starter file provides step-by-step comments. Your team writes the code that keeps asking until the temperature is safe.
 
 ### Level 3: Security Decision
 
@@ -67,7 +67,7 @@ Ask the player to choose one action:
 - `shutdown`
 - `share`
 
-The starter file provides the choices and loop. Add an invalid-choice message and write a result for each valid choice.
+The starter file explains the choices in comments. Your team writes the loop, an invalid-choice message, and a result for each valid choice.
 
 Create your own results for the three choices. The message for `share` must remind the player not to share passwords or private information with AI.
 
@@ -105,7 +105,7 @@ Do not ask Copilot to complete the entire project.
 ## Submission Checklist
 
 - [ ] All three levels work.
-- [ ] The program uses the three provided `while` loops.
+- [ ] The program includes the required `while` loops.
 - [ ] The program handles invalid input choices.
 - [ ] The program includes friendly, readable messages.
 - [ ] `TEST-LOG.md` is complete.
